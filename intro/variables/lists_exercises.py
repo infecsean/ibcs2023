@@ -9,12 +9,12 @@ sum = sum(mylist)
 mylist = [1, 1, 1, 2, 2, 3, 4, 4]
 unduped = []
 
-x = 0
-while mylist[x] == mylist[x + 1]:
-    mylist.remove(x)
-    x = x + 1
-# unduped = [mylist.remove(x) for x in mylist if x == x + 1]
-print(mylist)
+for i in mylist:
+    if i not in unduped:
+        unduped.append(i)
+    i = i + 1
+# unduped = [unduped.append(x) for x in mylist if x not in unduped]
+print(unduped)
 
 # 03. Write a program that finds the intersection of two lists
 # 04. Write a program that finds the union of two lists, omitting duplicates
