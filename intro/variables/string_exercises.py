@@ -12,10 +12,12 @@ freq = {}
 # 2
 # Write a Python function to insert a string in the middle of a string
 
-# Sample function and result:
-# insert_string_middle() ->
-# insert_string_middle() ->
-# insert_string_middle() ->
+# Sample function and result :
+# insert_string_middle('[[]]', 'Python') -> [[Python]]
+# insert_string_middle('{{}}', 'PHP') -> {{PHP}}
+# insert_string_middle('|||', 'Unbalanced') -> |Unbalanced||
+wrapper = "(())"
+interior = "Python"
 
 
 # 3
@@ -42,5 +44,5 @@ number = "394857"
 
 # 6
 # Write a Python program to determine if a set of parenthesis are balanced
-# (()(((()()()(())))))()(())
-text = "(()(((()()()(())))))()(())"
+# (()((()(())())())))()))))(())())()
+text = "(()((()(())())())))()))))(())())()"
