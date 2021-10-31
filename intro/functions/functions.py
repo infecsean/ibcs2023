@@ -121,3 +121,28 @@ do_a_thing(even_handler, odd_handler)
 do_a_thing(even_handler, odd_handler_2)
 
 # Generators
+
+
+def squares() -> int:
+    n = 1
+    while True:
+        yield n ** 2
+        n += 1
+
+
+val = squares()
+
+for i in range(100):
+    print(next(val))
+
+
+def fibonacci_numbers(nums):
+    x, y = 0, 1
+    for _ in range(nums):
+        x, y = y, x + y
+        yield x
+
+
+gen = fibonacci_numbers(20)
+for _ in range(20):
+    print(next(gen))
