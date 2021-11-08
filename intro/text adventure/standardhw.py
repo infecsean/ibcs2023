@@ -1,6 +1,6 @@
-def user_input() -> int:
+def user_input(prompt: str) -> int:
     try:
-        return int(input("Do something: "))
+        return int(input(prompt))
     except (ValueError, TypeError):
         return -1
 
