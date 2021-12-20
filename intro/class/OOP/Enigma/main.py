@@ -17,6 +17,7 @@ def encipher_string(seed: any, data: bytearray):
 
 
 def encipher_file(infile_path: str, outfile_path: str, seed: any):
+    e = Enigma(seed)
     # Open in and out files in binary format
     with open(infile_path, "rb") as infd, open(outfile_path, "wb") as outfd:
         #   Infinite loop we break out of when no more dtat is read
