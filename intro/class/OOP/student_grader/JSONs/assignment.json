@@ -1,19 +1,19 @@
 {
     "Assignments": {
         "CS": {
-            "Assignment1": "Coding",
-            "Assignemnt2": "Review",
-            "Assignment3": "Text Adventure"
+            "Ass1": "Coding",
+            "Ass2": "Review",
+            "Ass3": "Text Adventure"
         },
         "English": {
-            "Assignment1": "Hamlet",
-            "Assignment2": "Analysis",
-            "Assignment3": "Skit"
+            "Ass1": "Hamlet",
+            "Ass2": "Analysis",
+            "Ass3": "Skit"
         },
         "Math": {
-            "Assignment1": "Worksheet",
-            "Assignment2": "Review Set",
-            "Assignment3": "Learn How to use a calculator"
+            "Ass1": "Worksheet",
+            "Ass2": "Review Set",
+            "Ass3": "Learn How to use a calculator"
         }
     }
 }

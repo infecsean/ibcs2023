@@ -12,16 +12,56 @@ student = json.load(a)
 subject = json.load(b)
 assignment = json.load(c)
 
-for i in student["Student"]:
-    print("Student ID: " + i["id"])
-    print("Family Name: " + i["familyName"])
-    print("Given Name: " + i["givenName"])
+
+def Student(ID: str):
+    for i in student["Student"]:
+        if i["id"] == ID:
+            print("Hello, " + i["givenName"] + " " + i["familyName"])
+    while True:
+        command = input("What would you like to do? ")
+
+        if command == "get assignment":
+            GetAssignments(ID)
+        if command == "get grades":
+            GetGrades(ID)
+        else:
+            return
 
 
-def Student(ID):
+def GetGrades(ID):
+    # for i in student["Student"]:
+    #     if i["id"] == ID:
+    #         sub1 = i["subjects"][0]
+    #         sub2 = i["subjects"][1]
+    #         sub3 = i["subjects"][2]
+    # chosenSub = input("Which subject? ")
+    # if chosenSub == sub1:
+
     pass
-    # ndex = student["Student"].index(ID)
-    # print("Hello, " + index["givenName"] + index["familyName"])
+
+
+# def SubChooser(Sub:str):
+#     for i in student["Student"]:
+#         if i["id"] == ID:
+#             sub1 = i["subjects"][0]
+#             sub2 = i["subjects"][1]
+#             sub3 = i["subjects"][2]
+#     switch = {
+#         Sub:
+#     }
+
+
+def GetAssignments(ID):
+    for i in student["Student"]:
+        if i["id"] == ID:
+            sub1 = i["subjects"][0]
+            sub2 = i["subjects"][1]
+            sub3 = i["subjects"][2]
+    print("Your subjects are: " + sub1 + ", " + sub2 + ", " + sub3)
+
+
+def Subject():
+    pass
 
 
 a.close

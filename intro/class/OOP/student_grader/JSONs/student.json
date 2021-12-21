@@ -3,12 +3,34 @@
         {
             "id": "69y420",
             "familyName": "Cena",
-            "givenName": "John"
+            "givenName": "John",
+            "subjects": [
+                {
+                    "Chemistry": 7
+                },
+                {
+                    "English": 6
+                },
+                {
+                    "Math": 5
+                }
+            ]
         },
         {
-            "Subject1": "Eng",
-            "Subject2": "Math",
-            "Subject3": "Chinese"
+            "id": "00y000",
+            "familyName": "Doe",
+            "givenName": "John",
+            "subjects": [
+                {
+                    "Chinese": 4
+                },
+                {
+                    "CompSci": 7
+                },
+                {
+                    "Physics": 5
+                }
+            ]
         }
     ]
 }
