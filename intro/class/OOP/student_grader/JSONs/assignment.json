@@ -1,0 +1,19 @@
+{
+    "Assignments": {
+        "CS": {
+            "Assignment1": "Coding",
+            "Assignemnt2": "Review",
+            "Assignment3": "Text Adventure"
+        },
+        "English": {
+            "Assignment1": "Hamlet",
+            "Assignment2": "Analysis",
+            "Assignment3": "Skit"
+        },
+        "Math": {
+            "Assignment1": "Worksheet",
+            "Assignment2": "Review Set",
+            "Assignment3": "Learn How to use a calculator"
+        }
+    }
+}

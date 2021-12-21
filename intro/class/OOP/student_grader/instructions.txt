@@ -22,6 +22,7 @@ subject
 
     get_assignments_for_student(student_id) -> list of assignments
     get_student_grade(student_id) -> float
+    get_student_grades() -> List of student id and grades
 
 assignment
     assignment name
@@ -31,6 +32,6 @@ assignment
     }
 
     get_mean() -> float
-    get_min() -> float
-    get_max() -> float
-    
+    get_student_grade(student_id) -> float
+    get_below(percent) -> list of student ids and marks
+    get_above(percent) -> list of student ids and marks

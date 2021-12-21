@@ -1,0 +1,14 @@
+{
+    "Student": [
+        {
+            "id": "69y420",
+            "familyName": "Cena",
+            "givenName": "John"
+        },
+        {
+            "Subject1": "Eng",
+            "Subject2": "Math",
+            "Subject3": "Chinese"
+        }
+    ]
+}
