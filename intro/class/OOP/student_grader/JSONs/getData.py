@@ -22,7 +22,7 @@ def Student(ID: str):
 
         if command == "get assignment":
             GetAssignments(ID)
-        if command == "get grades":
+        elif command == "get grades":
             GetGrades(ID)
         else:
             return

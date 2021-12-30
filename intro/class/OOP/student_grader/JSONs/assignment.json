@@ -1,19 +1,136 @@
 {
     "Assignments": {
         "CS": {
-            "Ass1": "Coding",
-            "Ass2": "Review",
-            "Ass3": "Text Adventure"
+            "Ass1": {
+                "Name": "Coding",
+                "MaxMark": 7,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 5
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 7
+                    }
+                ]
+            },
+            "Ass2": {
+                "Name": "Review",
+                "MaxMark": 7,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 3
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 6
+                    }
+                ]
+            },
+            "Ass3": {
+                "Name": "Text Adventure",
+                "MaxMark": 7,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 5
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 6
+                    }
+                ]
+            }
         },
         "English": {
-            "Ass1": "Hamlet",
-            "Ass2": "Analysis",
-            "Ass3": "Skit"
+            "Ass1": {
+                "Name": "Hamlet",
+                "MaxMark": 7,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 4
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 4
+                    }
+                ]
+            },
+            "Ass2": {
+                "Name": "Analysis",
+                "MaxMark": 7,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 5
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 5
+                    }
+                ]
+            },
+            "Ass3": {
+                "Name": "Skit",
+                "MaxMark": 5,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 3
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 4
+                    }
+                ]
+            }
         },
         "Math": {
-            "Ass1": "Worksheet",
-            "Ass2": "Review Set",
-            "Ass3": "Learn How to use a calculator"
+            "Ass1": {
+                "Name": "Worksheet",
+                "MaxMark": 2,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 2
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 1
+                    }
+                ]
+            },
+            "Ass2": {
+                "Name": "Review Set",
+                "MaxMark": 50,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 40
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 49
+                    }
+                ]
+            },
+            "Ass3": {
+                "Name": "Learn How to use a calculator",
+                "MaxMark": 1,
+                "StudentMark": [
+                    {
+                        "ID": "69y420",
+                        "Mark": 1
+                    },
+                    {
+                        "ID": "00y000",
+                        "Mark": 1
+                    }
+                ]
+            }
         }
     }
 }
