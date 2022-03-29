@@ -8,14 +8,42 @@
             "name": "Blocking TCP Server",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/class/networking/blocking/tcp_server.py",
+            "program": "${workspaceFolder}/intro/class/networking/blocking/tcp_server.py",
             "console": "integratedTerminal"
         },
         {
             "name": "Blocking TCP Client",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/class/networking/blocking/tcp_client.py",
+            "program": "${workspaceFolder}/intro/class/networking/blocking/tcp_client.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Blocking UDP Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/blocking/udp_server.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Blocking UDP Client",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/blocking/udp_client.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking TCP Multithreaded Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/tcp_multithreaded_server.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking TCP Selector Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/tcp_selector_server.py",
             "console": "integratedTerminal"
         }
     ]
