@@ -45,6 +45,34 @@
             "request": "launch",
             "program": "${workspaceFolder}/intro/class/networking/nonblocking/tcp_selector_server.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking Async Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/async_echo_server.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking Async Client",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/async_echo_client.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking Async Chat Client",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/async_chat_client.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Nonblocking Async Chat Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/intro/class/networking/nonblocking/async_chat_server.py",
+            "console": "integratedTerminal"
         }
     ]
 }
