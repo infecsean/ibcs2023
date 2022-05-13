@@ -1,10 +1,13 @@
 # /networking/nonblocking/async_chat_client.py
 import asyncio
+import json
 
 ENCODING = "utf8"
+USERNAME = "username"
+MESSAGE = "message"
 
 
-class EchoClientProtocol(asyncio.Protocol):
+class ChatClientProtocol(asyncio.Protocol):
     def __init__(self, on_conn_lost, loop):
 
         # We need the loop later so we can execute some
@@ -48,6 +51,56 @@ class EchoClientProtocol(asyncio.Protocol):
                 self.send(message)
 
 
+class ChatApp:
+    def __init__(self):
+        self._username = None
+
+        self.loop = asyncio.get_running_loop()
+
+        self.on_conn_lost = self.loop.create_future
+
+        # Create an instance of the EchoClientProtocol
+        echo_client_protocol = ChatClientProtocol(self.on_conn_lost, self.loop)
+
+    @property
+    def username(self):
+        return self._username
+
+    @username.setter
+    def username(self, username: str):
+        self._username = username
+
+    async def get_message(self, loop: asyncio.BaseEventLoop):
+        while self.is_connected:
+            message = await loop.run_in_executor(None, input, "")
+            message = message.strip()
+            if message == "q":
+                self.is_connected = False
+                self._transport.close()
+            else:
+                json_packet = {USERNAME: self.username, MESSAGE: message}
+                packet = json.dumps(json_packet)
+                self.echo_client_protocol.send(packet)
+
+    def on_data_received(self, message):
+        pass
+
+    async def run(self):
+        # Create connection
+        transport, protocol = await self.loop.create_connection(
+            lambda: self.echo_client_protocol, self.host, self.port
+        )
+
+        # Start event loop that listens for input messages
+        await self.echo_client_protocol.get_message(self.loop)
+
+        # handle cleanup when client closes
+        try:
+            await self.on_conn_lost
+        finally:
+            transport.close()
+
+
 async def main():
     # Get a reference to the event loop since we are using
     # low-level APIs
@@ -61,7 +114,7 @@ async def main():
     on_conn_lost = loop.create_future
 
     # Create an instance of the EchoClientProtocol
-    echo_client_protocol = EchoClientProtocol(on_conn_lost, loop)
+    echo_client_protocol = ChatClientProtocol(on_conn_lost, loop)
 
     # Create connection
     transport, protocol = await loop.create_connection(

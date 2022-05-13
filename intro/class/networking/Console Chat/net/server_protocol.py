@@ -56,5 +56,16 @@ async def main():
         await server.serve_forever()
 
 
+def run_server(host: str = "127.0.0.1", port: int = 5001):
+    async def _run_server(host: str, port: int):
+        loop = asyncio.get_event_loop()
+        transports: List[asyncio.BaseTransport] = []
+        server = await loop.create_server(
+            lambda: ChatServerProtocol(transports), host, port
+        )
+        async with server:
+            await server.serve_forever()
+
+
 if __name__ == "__main__":
     asyncio.run(main())
